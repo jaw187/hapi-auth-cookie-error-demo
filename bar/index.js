@@ -12,7 +12,8 @@ function register(server, options, next) {
                 return callback(null, false);
             }
             return callback(null, true, data.user);
-        }
+        },
+        requestDecoratorName: 'barCookieAuth'
     });
     next();
 }
